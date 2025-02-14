@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub: Modern Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f1f1f1;
+        }
+        header {
+            background: #2a2a2a;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #ff6f61;
+        }
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #fff;
+        }
+        section {
+            padding: 60px 20px;
+            margin: 20px 0;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        section h2 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .course {
+            background-color: #444;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            width: 280px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .course:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        }
+        .course h3 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .course p {
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+        .course a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .course a:hover {
+            background-color: #e65c4c;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e65c4c;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 2px solid #555;
+            background-color: #333;
+            color: #fff;
+        }
+        input:focus, textarea:focus {
+            border-color: #ff6f61;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to LearnHub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Empowering Learning Online</h2>
+        <p>Explore courses and enhance your knowledge with our interactive resources. Start your learning journey today!</p>
+    </section>
+    
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <li ><a style="color: yellow;" href="course.html">course content</a></li>
+        <div class="course-list">
+            <div class="course">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="course">
+                <h3>Data Science</h3>
+                <p>Master Python, AI, ML</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="course">
+                <h3>Graphic Design</h3>
+                <p>Learn Photoshop, Illustrator, Figma</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        
+
+    </section>
+    
+    <section id="resources">
+        <h2>Educational Resources</h2>
+        <p>Download study materials, presentations, and more to enhance your learning experience.</p>
+        <li><a style="color: yellow;" href="Educational.html">Study materials</a></li>
+    </section>
+    
+    <section id="quiz">
+        <h2>Interactive Quiz</h2>
+        <p>Test your knowledge and compete with others in interactive quizzes.</p>
+        <li><a style="color: yellow;" href="Interactive.html">start Quiz</a></li>
+
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to making education accessible and fun for everyone, worldwide.</p>
+        <p>Welcome to LearnHub! We are an online learning platform with a mission to make education accessible to everyone. Our goal is to provide high-quality, affordable, and interactive courses that empower individuals to learn new skills and advance in their careers.</p>
+        <p>At LearnHub, we believe in the power of education to transform lives. Whether you are a beginner looking to explore new fields or a professional wanting to deepen your knowledge, our courses are designed to be engaging and easy to follow, helping you build the skills needed for success in today's fast-paced world.</p>
+        <p>We offer a wide range of courses in areas such as Web Development, Data Science, Graphic Design, and more. Each course is designed by industry experts, ensuring that the content is up-to-date, practical, and relevant to real-world applications.</p>
+        <p>Join our growing community of learners and take the first step towards reaching your goals. Explore, learn, and grow with LearnHub!</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label>Name: <input type="text" name="name" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>Message: <textarea name="message" required></textarea></label>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 LearnHub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
